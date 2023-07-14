@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar,
+.header,
+.main-content {
+    border: 1px solid black;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 25vh 120vh;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / -1;
+}
+
+.header {
+    grid-column: 2 / -1;
+}
+
+.main-content {
+    grid-column: 2 / -1;
+}
