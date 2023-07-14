@@ -4,7 +4,10 @@
     padding: 0;
 }
 
-.sidebar,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .header,
 .main-content {
     border: 1px solid black;
@@ -12,13 +15,55 @@
 
 .main-layout {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 3.7fr;
     grid-template-rows: 25vh 120vh;
 }
 
 .sidebar {
     grid-column: 1;
     grid-row: 1 / -1;
+    background-color: #0ea5e9;
+    color: white;
+    padding: 1.2rem;
+}
+
+.sidebar svg {
+    fill: white;
+}
+
+.sidebar h1 {
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar h1 svg {
+    width: 3rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul svg {
+    width: 1.5rem;
+    height: auto;
+    margin-right: 1.5rem;
+}
+
+.sidebar ul li {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 1.6rem 0.7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sidebar ul li:nth-child(6) {
+    margin-bottom: 5rem;
 }
 
 .header {
