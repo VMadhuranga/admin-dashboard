@@ -111,7 +111,6 @@ body {
 .header-main-div1 .profile-pic {
     min-width: 3rem;
     height: 3rem;
-    border-radius: 100%;
 }
 
 .header-main-div2 {
@@ -137,7 +136,6 @@ body {
 .header-main-div2 .profile-pic {
     min-width: 5rem;
     height: 5rem;
-    border-radius: 100%;
 }
 
 .header-main-div2 > div:nth-child(2) {
@@ -164,7 +162,6 @@ body {
     display: grid;
     gap: 1rem;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
 }
 
 .main-content .project {
@@ -178,7 +175,7 @@ body {
 .main-content .card-container {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .main-content .card {
@@ -212,6 +209,12 @@ body {
     height: auto;
 }
 
+.main-content .aside {
+    display: grid;
+    gap: 1.5rem;
+    align-content: start;
+}
+
 .main-content .announcement-card {
     background-color: white;
     padding: 1.5rem;
@@ -231,4 +234,30 @@ body {
 .main-content .announcement-card p {
     color: #6b7280;
     font-size: 0.9rem;
+}
+
+.main-content .trending-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 5px lightgray;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.main-content .trending-card > div {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-content .trending-card .profile-pic {
+    min-width: 3rem;
+    height: 3rem;
+}
+
+.main-content .trending-card p {
+    font-size: 1rem;
 }
