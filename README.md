@@ -1,10 +1,11 @@
 # Admin Dashboard
 
-This is The Odin Project's Admin Dashboard project assignment
+This is TOP curriculum's Admin Dashboard project assignment
 
-This project intends to practice knowledge of CSS Grid skills
+This project intends to practice my knowledge of CSS Grid
 
 Live preview: https://vmadhuranga.github.io/admin-dashboard/
+
 Icon credits: https://pictogrammers.com/
 
 TODO:
